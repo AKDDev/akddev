@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
-use App\Http\Resources\Portfolio as PortfolioResource;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StorePortfolioRequest;
+use App\Http\Requests\UpdatePorfolioRequest;
+use App\Http\Resources\Portfolio as PortfolioResource;
 
 class PortfolioController extends Controller
 {
@@ -36,7 +38,7 @@ class PortfolioController extends Controller
         //
     }
 
-    public function update(Request $request, Portfolio $portfolio)
+    public function update(UpdatePorfolioRequest $request, Portfolio $portfolio)
     {
         //
     }
